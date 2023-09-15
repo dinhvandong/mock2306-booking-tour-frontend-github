@@ -7,7 +7,7 @@ import React from 'react'
 const Header1 = () => {
   return (
     <div style={{ 
-     alignContent:'center', alignItems:'center', height:'50%', width:'60%',display:'flex' , flexDirection:'row', justifyContent:'space-between' }}>
+     alignContent:'center', color:'white', alignItems:'center', height:'60px', width:'60%',display:'flex' , flexDirection:'row', justifyContent:'space-between' }}>
 
         <div style={{ fontSize:'20px', color:'white', fontWeight:'bold', alignItems:'center' }}>
             Booking.com

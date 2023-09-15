@@ -12,7 +12,7 @@ const Header2 = () => {
   return (
     <div
       style={{
-        height: "50%",
+        height: "60px",
         alignItems: "center",
         width: "60%",
         display: "flex",
