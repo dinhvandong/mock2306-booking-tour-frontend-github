@@ -6,12 +6,12 @@ import { car } from "ionicons/icons";
 import { bus } from "ionicons/icons";
 import { cog } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
-const NavigationMenu = () => {
+const NavAdmin = () => {
   return (
     <nav className="flex w-[60%] text-white font-medium mt-3">
       <ul className="flex space-x-4">
         <li>
-          <Link to="/stay">
+          <Link to="/admin/dashboard">
             {" "}
             <div
               style={{
@@ -27,7 +27,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/fight">
+          <Link to="/admin/customer">
             {" "}
             <div
               style={{
@@ -44,7 +44,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/hotel">
+          <Link to="/admin/booking">
             {" "}
             <div
               style={{
@@ -61,7 +61,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/car-rental">
+          <Link to="/admin/taxi">
             {" "}
             <div
               style={{
@@ -78,7 +78,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/attraction">
+          <Link to="/admin/report">
             {" "}
             <div
               style={{
@@ -95,7 +95,7 @@ const NavigationMenu = () => {
           </Link>
         </li>
         <li>
-          <Link to="/taxi">
+          <Link to="/admin/service">
             {" "}
             <div
               style={{
@@ -116,4 +116,4 @@ const NavigationMenu = () => {
   );
 };
 
-export default NavigationMenu;
+export default NavAdmin;

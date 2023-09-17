@@ -2,6 +2,7 @@
 import { IonIcon } from '@ionic/react'
 import {helpCircleOutline} from 'ionicons/icons';
 import React from 'react'
+import { useHistor } from 'react-router-dom';
 
 
 const Header1 = () => {
@@ -17,7 +18,7 @@ const Header1 = () => {
              marginBlockEnd:'10px', display:'flex', flexDirection:'row', justifyContent:'flex-end' }}>
 
             <button style={{borderWidth:'0px', color:'white', marginRight:'10px', backgroundColor:'transparent', height:'30px' }}>VND</button>
-            <div style={{ height:'30px', marginRight:'10px', backgroundColor:'transparent' }}> <img style={{ width:'30px', height:'30px' }} src='assets/flag-usa.png' alt='flag-usa' /></div>
+            <div style={{ height:'30px', marginRight:'10px', backgroundColor:'transparent' }}> <img style={{ width:'30px', height:'30px' }} src='../assets/flag-usa.png' alt='flag-usa' /></div>
             <div style={{ height:'50px',marginRight:'10px', backgroundColor:'transparent', color:'white', fontSize:'35px' }} ><IonIcon icon={helpCircleOutline}/></div>
             <button style={{ color:'white',marginRight:'10px',  backgroundColor:'transparent',height:'30px', borderColor:'white' }}>List your property</button>
             <button style={{marginRight:'10px', height:'30px' }}>Register</button>

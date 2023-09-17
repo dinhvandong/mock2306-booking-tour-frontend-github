@@ -1,7 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TourList from "./TourList";
+import api from "../features/api/api";
 
 const Explore = () => {
+
+
+  const [tours, setTours] = useState([]);
+  // localhost:8080/api/bookings
+
+  const fetchData = async () => {
+    try {
+      const response = await api.get('/bookings');
+      // Handle the response data
+      console.log(response.data.data);
+      setTours(response.data.data);
+    } catch (error) {
+      // Handle errors
+      console.error(error);
+    }
+  };
+
+  useEffect(()=>{
+
+    fetchData();
+
+  },[]);
+
   const tourList = [
     {
       image:
@@ -88,7 +112,7 @@ const Explore = () => {
       }}
     >
       <div className="flex flex-row w-[60%]">
-        <TourList tourList={tourList} />
+        <TourList tourList={tours} />
       </div>
     </div>
   );
