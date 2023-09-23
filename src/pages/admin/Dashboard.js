@@ -2,6 +2,7 @@ import React from 'react'
 
 import Footer from '../../components/Footer'
 import HeaderAdmin from '../../components/admin/HeaderAdmin'
+import CustomerList from '../../components/admin/CustomerList'
 
 
 const Dashboard = () => {
@@ -9,7 +10,8 @@ const Dashboard = () => {
     <div className=' h-full overflow-y-auto' style={{ width:'100%', display:'flex',
      flexDirection:'column'  }}>
 
-        <HeaderAdmin/>
+        <HeaderAdmin menu={"menu1"}/>
+        <CustomerList/>
       
         <Footer/>
 

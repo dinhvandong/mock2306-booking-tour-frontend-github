@@ -9,7 +9,7 @@ const Header = () => {
         
         <Header1/>
         <NavigationMenu/>
-        <Header3/>
+        <Header3 title={"Where to next, Đinh Văn?"} sub={"Find exclusive Genius rewards in every corner of the world!"}/>
     </div>
   )
 }

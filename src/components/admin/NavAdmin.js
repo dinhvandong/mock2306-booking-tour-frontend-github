@@ -6,44 +6,26 @@ import { car } from "ionicons/icons";
 import { bus } from "ionicons/icons";
 import { cog } from "ionicons/icons";
 import { IonIcon } from "@ionic/react";
-const NavAdmin = () => {
+const NavAdmin = ({menu}) => {
   return (
-    <nav className="flex w-[60%] text-white font-medium mt-3">
+    <nav className="flex w-[60%]  mt-3">
       <ul className="flex space-x-4">
-        <li>
-          <Link to="/admin/dashboard">
-            {" "}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                color: "white",
-                flexDirection: "row",
-              }}
-            >
-              <IonIcon icon={business} />
-              <div style={{ marginLeft: "5px" }}>Stays</div>
-            </div>
-          </Link>
-        </li>
-        <li>
+        <li className=  {menu==='menu1'?" text-orange-600 font-bold border-2 p-2 rounded-xl":"text-white font-light"}>
           <Link to="/admin/customer">
             {" "}
             <div
               style={{
-                marginLeft: "20px",
                 display: "flex",
                 alignItems: "center",
-                color: "white",
                 flexDirection: "row",
               }}
             >
-              <IonIcon icon={airplane} />
-              <div style={{ marginLeft: "5px" }}>Flights</div>
+              <IonIcon icon={business} />
+              <div style={{ marginLeft: "5px" }}>Customers</div>
             </div>
           </Link>
         </li>
-        <li>
+        <li className=  {menu==='menu2'?" text-orange-600 font-bold border-2 p-2 rounded-xl":"text-white font-light"}>
           <Link to="/admin/booking">
             {" "}
             <div
@@ -51,16 +33,31 @@ const NavAdmin = () => {
                 marginLeft: "20px",
                 display: "flex",
                 alignItems: "center",
-                color: "white",
+                flexDirection: "row",
+              }}
+            >
+              <IonIcon icon={airplane} />
+              <div style={{ marginLeft: "5px" }}>Bookings</div>
+            </div>
+          </Link>
+        </li>
+        <li className=  {menu==='menu3'?" text-orange-600 font-bold border-2 p-2 rounded-xl ":"text-white font-light"}>
+          <Link to="/admin/booking">
+            {" "}
+            <div
+              style={{
+                marginLeft: "20px",
+                display: "flex",
+                alignItems: "center",
                 flexDirection: "row",
               }}
             >
               <IonIcon icon={car} />
-              <div style={{ marginLeft: "5px" }}>Flight+Hotel</div>
+              <div style={{ marginLeft: "5px" }}>Services</div>
             </div>
           </Link>
         </li>
-        <li>
+        <li className=  {menu==='menu4'?" text-orange-600 font-bold border-2 p-2 rounded-xl":"text-white font-light"}>
           <Link to="/admin/taxi">
             {" "}
             <div
@@ -68,16 +65,15 @@ const NavAdmin = () => {
                 marginLeft: "20px",
                 display: "flex",
                 alignItems: "center",
-                color: "white",
                 flexDirection: "row",
               }}
             >
               <IonIcon icon={home} />
-              <div style={{ marginLeft: "5px" }}>Car Rentals</div>
+              <div style={{ marginLeft: "5px" }}>Report</div>
             </div>
           </Link>
         </li>
-        <li>
+        <li className=  {menu==='menu5'?" text-orange-600 font-bold border-2 p-2 rounded-xl":"text-white font-light"}>
           <Link to="/admin/report">
             {" "}
             <div
@@ -85,29 +81,11 @@ const NavAdmin = () => {
                 marginLeft: "20px",
                 display: "flex",
                 alignItems: "center",
-                color: "white",
                 flexDirection: "row",
               }}
             >
               <IonIcon icon={cog} />
-              <div style={{ marginLeft: "5px" }}>Attractions</div>
-            </div>
-          </Link>
-        </li>
-        <li>
-          <Link to="/admin/service">
-            {" "}
-            <div
-              style={{
-                marginLeft: "20px",
-                display: "flex",
-                alignItems: "center",
-                color: "white",
-                flexDirection: "row",
-              }}
-            >
-              <IonIcon icon={bus} />
-              <div style={{ marginLeft: "5px" }}>Airport Taxis</div>
+              <div style={{ marginLeft: "5px" }}>Blogs</div>
             </div>
           </Link>
         </li>
